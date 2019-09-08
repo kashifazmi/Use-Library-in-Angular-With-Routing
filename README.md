@@ -1,6 +1,9 @@
-# AngularWithAPIIntegration
+# AngularLibrary
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
+
+# Angular 8 routing with visualization using augury extension
+This Project will help you to learn about routing and visualization of routing and component using augury extension.
 
 ## Development server
 
