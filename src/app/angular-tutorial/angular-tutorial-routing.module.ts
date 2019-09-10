@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { PrimengDetailsComponent } from './primeng-details/primeng-details.component';
-import { NebularDetailsComponent } from './nebular-details/nebular-details.component';
-import { AuguryDetailsComponent } from './augury-details/augury-details.component';
-import { AngularLibraryComponent } from './angular-library/angular-library.component';
-import { ThirdPartyLibraryComponent } from './third-party-library/third-party-library.component';
+import { PrimengDetailsComponent } from './components/primeng-details/primeng-details.component';
+import { NebularDetailsComponent } from './components/nebular-details/nebular-details.component';
+import { AuguryDetailsComponent } from './components/augury-details/augury-details.component';
+import { AngularLibraryComponent } from './components/angular-library/angular-library.component';
+import { ThirdPartyLibraryComponent } from './components/third-party-library/third-party-library.component';
 
 
 const routes: Routes = [
@@ -26,7 +26,7 @@ const routes: Routes = [
   component: AuguryDetailsComponent
 },
 {
-  path: "third-party-library",
+  path: 'third-party-library',
   component: ThirdPartyLibraryComponent
 }];
 

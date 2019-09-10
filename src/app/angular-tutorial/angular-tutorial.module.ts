@@ -4,11 +4,11 @@ import { CommonModule } from '@angular/common';
 import { NbLayoutModule, NbCardModule, NbThemeModule } from '@nebular/theme';
 import { AngularTutorialRoutingModule } from './angular-tutorial-routing.module';
 // Component path
-import { NebularDetailsComponent } from './nebular-details/nebular-details.component';
-import { AuguryDetailsComponent } from './augury-details/augury-details.component';
-import { PrimengDetailsComponent } from './primeng-details/primeng-details.component';
-import { AngularLibraryComponent } from './angular-library/angular-library.component';
-import { ThirdPartyLibraryComponent } from './third-party-library/third-party-library.component';
+import { NebularDetailsComponent } from './components/nebular-details/nebular-details.component';
+import { AuguryDetailsComponent } from './components/augury-details/augury-details.component';
+import { PrimengDetailsComponent } from './components/primeng-details/primeng-details.component';
+import { AngularLibraryComponent } from './components/angular-library/angular-library.component';
+import { ThirdPartyLibraryComponent } from './components/third-party-library/third-party-library.component';
 
 
 @NgModule({
