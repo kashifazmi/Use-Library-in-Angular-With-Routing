@@ -5,6 +5,8 @@ This Project will help you to learn about routing and visualization of routing a
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
 
+## Installatation process
+download project and run command - npm install
 
 ## Development server
 
