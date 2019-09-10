@@ -1,1 +1,42 @@
-<p>augury-details works!</p>
+<nb-card>
+    <nb-card-body>
+      <nb-stepper orientation="horizontal">
+        <nb-step [label]="labelOne">
+          <ng-template #labelOne>First step</ng-template>
+          <h4>Step #1</h4>
+          <p class="lorem">
+           <b>Firstly</b>, We should understand what is `Augury`?
+
+          </p>
+          <button nbButton disabled nbStepperNext>prev</button>
+          <button nbButton nbStepperNext>next</button>
+        </nb-step>
+        <nb-step [label]="labelTwo">
+          <ng-template #labelTwo>Second step</ng-template>
+          <h4>Step #2</h4>
+          <p class="lorem">
+            <b>Secondly</b>, We should understand how can we use `Augury`?
+          </p>
+          <button nbButton nbStepperPrevious>prev</button>
+          <button nbButton nbStepperNext>next</button>
+        </nb-step>
+        <nb-step label="Third step">
+          <h4>Step #3</h4>
+          <p class="lorem">
+            <b>Third</b>, Demostration of `Augury`.
+          </p>
+          <button nbButton nbStepperPrevious>prev</button>
+          <button nbButton nbStepperNext>next</button>
+        </nb-step>
+        <nb-step [label]="labelFour">
+          <ng-template #labelFour>Fourth step</ng-template>
+          <h4>Step #4</h4>
+          <p class="lorem">
+           <b>Fourth</b>, If you want to explore more, then follow official website.
+          </p>
+          <button nbButton nbStepperPrevious>prev</button>
+          <button nbButton disabled nbStepperNext>next</button>
+        </nb-step>
+      </nb-stepper>
+    </nb-card-body>
+  </nb-card>
