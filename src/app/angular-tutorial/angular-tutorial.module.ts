@@ -26,6 +26,6 @@ import { ThirdPartyLibraryComponent } from './third-party-library/third-party-li
     // this will enable the default theme, you can change this by passing `{ name: 'dark' }` to enable the dark theme
     NbThemeModule.forRoot({ name: 'dark' }),
     NbCardModule
-  ]  
+  ]
 })
 export class AngularTutorialModule { }

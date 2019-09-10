@@ -1,11 +1,4 @@
-<nb-layout>
-  <nb-layout-header fixed>
-    <!-- Insert header here -->
-    Demonstration of all types of Library and Extension in Angular 8
-  </nb-layout-header>
-
-  <nb-layout-column>
-    <div class="container">
+<div class="container">
       <div class="row">
         <div clas="col-md-4" style="margin-left:7em; width:20em">
           <nb-card accent="info">
@@ -17,7 +10,8 @@
               Nebular is a customizable Angular UI Library based on Eva Design System specifications,
               with 40+ UI components, 4 visual themes, Auth and Security modules.
             </nb-card-body>
-            <nb-card-footer>For more Details: <u><i>click here</i></u> </nb-card-footer>
+            <nb-card-footer>For more Details: <i><a [routerLink]="'/nebular-details'">click here</a></i>
+            </nb-card-footer>
           </nb-card>
         </div>
         <div class="col-md-4" style="margin-left: 1em">
@@ -27,7 +21,8 @@
               PrimeNG is a collection of rich UI components for Angular with 80+ components, multiple
               themes, customizable template,fully supported mobile-native.
             </nb-card-body>
-            <nb-card-footer>For more Details: <u><i>click here</i></u> </nb-card-footer>
+            <nb-card-footer>For more Details: <i><a [routerLink]="'/primeng-details'">click here</a></i>
+            </nb-card-footer>
           </nb-card>
         </div>
         <div class="col-md-4" style="margin-left:-3.5em">
@@ -37,7 +32,8 @@
               Third-Party library are like Bootstrap, Moments, Rxjs, hammer js, all other library
               which support authentication (ADAL- Azure Active directory library for javascript).
             </nb-card-body>
-            <nb-card-footer>For more Details: <u><i>click here</i></u> </nb-card-footer>
+            <nb-card-footer>For more Details: <i><a [routerLink]="'/third-party-library'">click here</a></i>
+            </nb-card-footer>
           </nb-card>
         </div>
       </div>
@@ -47,10 +43,11 @@
             <nb-card-header style="background-color: #927d1f">Augury Tutorial</nb-card-header>
             <!-- side nav will add here -->
             <nb-card-body>
-              Augury is the most used Developer Tool extension for debugging and profiling 
+              Augury is the most used Developer Tool extension for debugging and profiling
               Angular applications inside the Google Chrome and Mozilla Firefox browsers.
             </nb-card-body>
-            <nb-card-footer>For more Details: <u><i>click here</i></u> </nb-card-footer>
+            <nb-card-footer>For more Details: <i><a [routerLink]="'/augury-details'">click here</a></i>
+            </nb-card-footer>
           </nb-card>
         </div>
         <!-- <div class="col-md-4" style="margin-left: 1em">
@@ -76,14 +73,4 @@
       </div>
 
     </div>
-  </nb-layout-column>
-
-  <nb-layout-footer fixed>
-    <p>
-      <a href="https://github.com/kashifazmi/AngularLibraryUse"><img src="./../../../assets/githubnew.png" style="width:3em"></a>
-      <a href=""><img src="./../../../assets/twitter.png" style="width:3em; margin-left:2em"></a>
-    </p>
-    <!-- Insert footer here -->
-  </nb-layout-footer>
-
-</nb-layout>
+  

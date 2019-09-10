@@ -8,7 +8,8 @@ import { AngularLibraryComponent } from './angular-library/angular-library.compo
 import { ThirdPartyLibraryComponent } from './third-party-library/third-party-library.component';
 
 
-const routes: Routes = [{
+const routes: Routes = [
+{
   path: '',
   component: AngularLibraryComponent
 },
