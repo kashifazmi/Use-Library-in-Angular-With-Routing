@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {catchError, tap } from 'rxjs/operators';
-import {Observable, of} from 'rxjs';
+import {Observable, of, BehaviorSubject} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -25,6 +25,16 @@ export class AngularTutorialService {
       catchError(this.handleError<any[]>('addSkiUser', []))
     );
   }
+
+  //#region
+  // TO SET and GET Data from any sibling component
+  private messageSrc = new BehaviorSubject('default message');
+  currentMessage = this.messageSrc.asObservable();
+
+  settingNewMessage(message: string) {
+     this.messageSrc.next(message);
+  }
+  //#endregion
 
   /**
  * Handle Http operation that failed.

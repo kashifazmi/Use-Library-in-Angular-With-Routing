@@ -1,5 +1,6 @@
 <nb-card>
     <nb-card-body>
+        {{messageValue}}
       <nb-stepper orientation="horizontal">
         <nb-step [label]="labelOne">
           <ng-template #labelOne>First step</ng-template>
@@ -38,5 +39,6 @@
           <button nbButton disabled nbStepperNext>next</button>
         </nb-step>
       </nb-stepper>
+      <button (click)="setMessage()">Set Message</button>
     </nb-card-body>
   </nb-card>

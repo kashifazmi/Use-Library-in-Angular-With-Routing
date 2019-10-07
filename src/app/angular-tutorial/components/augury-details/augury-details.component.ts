@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularTutorialService } from '../../services/angular-tutorial.service';
 
 @Component({
   selector: 'app-augury-details',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./augury-details.component.css']
 })
 export class AuguryDetailsComponent implements OnInit {
-
-  constructor() { }
+  messageValue: string;
+  constructor(private augrySerive: AngularTutorialService) { }
 
   ngOnInit() {
+    this.augrySerive.currentMessage.subscribe(msg => this.messageValue = msg);
   }
-
+  setMessage() {
+    this.augrySerive.settingNewMessage("Hello User")
+  }
 }

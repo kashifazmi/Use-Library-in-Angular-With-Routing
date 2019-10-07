@@ -10,10 +10,12 @@ import { Observable } from 'rxjs';
 })
 export class AngularLibraryComponent implements OnInit {
   output: any[];
+  message: string
   constructor(private libServices: AngularTutorialService) { }
 
   ngOnInit() {
     this.getAngLibDetails();
+    this.libServices.currentMessage.subscribe(msg => this.message = msg);
   }
 
   getAngLibDetails() {
