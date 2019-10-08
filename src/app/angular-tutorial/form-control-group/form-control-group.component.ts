@@ -16,6 +16,7 @@ export class FormControlGroupComponent implements OnInit {
       Validators.pattern('^(?=.*[a-zA-Z])[a-zA-Z0-9]+$'), // <-- Allow letters and numbers only
     ])),
     lastName: new FormControl(''),
+    preferred: new FormControl(''),
     address: new FormGroup({
       street: new FormControl(''),
       city: new FormControl(''),
@@ -63,7 +64,7 @@ export class FormControlGroupComponent implements OnInit {
 
   onFBSubmit() {
     console.log(this.profileFormBuillder.status);
- 
+
     console.log(this.profileFormBuillder.value);
 
   }

@@ -14,7 +14,8 @@ import { AngularTutorialService } from './services/angular-tutorial.service';
 import { FormPageComponent } from './form-page/form-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormControlGroupComponent } from './form-control-group/form-control-group.component';
-
+import {CheckboxModule} from 'primeng/checkbox';
+import { PrimengControlsComponent } from './primeng-controls/primeng-controls.component';
 @NgModule({
   declarations: [
     PrimengDetailsComponent,
@@ -23,7 +24,8 @@ import { FormControlGroupComponent } from './form-control-group/form-control-gro
     AngularLibraryComponent,
     ThirdPartyLibraryComponent,
     FormPageComponent,
-    FormControlGroupComponent
+    FormControlGroupComponent,
+    PrimengControlsComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +36,8 @@ import { FormControlGroupComponent } from './form-control-group/form-control-gro
     NbCardModule,
     NbStepperModule,
     NbButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CheckboxModule
   ],
   // providers: [AngularTutorialService]
 })

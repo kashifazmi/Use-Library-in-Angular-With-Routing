@@ -33,6 +33,23 @@
             <input type="text" formControlName="zip">
         </label>
     </div>
+
+    <span class="form-element">
+        Notification Preferences
+        <div class="group">
+            <label>
+                <p-checkbox label="Call" value="call" [formControl]="profileForm.controls['preferred']"></p-checkbox>
+            </label>
+            <label>
+                <p-checkbox label="Text" value="Text" [formControl]="profileForm.controls['preferred']" value="text">
+                </p-checkbox>
+            </label>
+            <label>
+                <p-checkbox label="Email" value="mail" [formControl]="profileForm.controls['preferred']"
+                    value="email"></p-checkbox>
+            </label>
+        </div>
+    </span>
     <button type="submit" [disabled]="!profileForm.valid">Submit</button>
     <p>
         <button (click)="updateProfile()">Update Profile</button>
