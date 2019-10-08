@@ -11,14 +11,19 @@ import { AngularLibraryComponent } from './components/angular-library/angular-li
 import { ThirdPartyLibraryComponent } from './components/third-party-library/third-party-library.component';
 import { AngularTutorialService } from './services/angular-tutorial.service';
 
+import { FormPageComponent } from './form-page/form-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormControlGroupComponent } from './form-control-group/form-control-group.component';
 
 @NgModule({
   declarations: [
-    PrimengDetailsComponent, 
-    NebularDetailsComponent, 
-    AuguryDetailsComponent, 
-    AngularLibraryComponent, 
-    ThirdPartyLibraryComponent
+    PrimengDetailsComponent,
+    NebularDetailsComponent,
+    AuguryDetailsComponent,
+    AngularLibraryComponent,
+    ThirdPartyLibraryComponent,
+    FormPageComponent,
+    FormControlGroupComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +33,8 @@ import { AngularTutorialService } from './services/angular-tutorial.service';
     NbThemeModule.forRoot({ name: 'dark' }),
     NbCardModule,
     NbStepperModule,
-    NbButtonModule
+    NbButtonModule,
+    ReactiveFormsModule
   ],
   // providers: [AngularTutorialService]
 })

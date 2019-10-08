@@ -1,0 +1,81 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+    <label>
+        First Name:
+        <input type="text" formControlName="firstName">
+    </label>
+
+    <label>
+        Last Name:
+        <input type="text" formControlName="lastName">
+    </label>
+    <!-- Address form group -->
+    <div formGroupName="address">
+        <h3>Address</h3>
+
+        <label>
+            Street:
+            <input type="text" formControlName="street">
+        </label>
+
+        <label>
+            City:
+            <input type="text" formControlName="city">
+        </label>
+
+        <label>
+            State:
+            <input type="text" formControlName="state">
+        </label>
+
+        <label>
+            Zip Code:
+            <input type="text" formControlName="zip">
+        </label>
+    </div>
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+    <p>
+        <button (click)="updateProfile()">Update Profile</button>
+    </p>
+</form>
+
+<!-- #region start - formbuilder -->
+<!-- <form [formGroup]="profileFormBuillder" (ngSubmit)="onFBSubmit()">
+
+    <label>
+        First Name:
+        <input type="text" formControlName="fname">
+    </label>
+
+    <label>
+        Last Name:
+        <input type="text" formControlName="lastName">
+    </label>
+    <div formGroupName="address">
+        <h3>Address</h3>
+
+        <label>
+            Street:
+            <input type="text" formControlName="street">
+        </label>
+
+        <label>
+            City:
+            <input type="text" formControlName="city">
+        </label>
+
+        <label>
+            State:
+            <input type="text" formControlName="state">
+        </label>
+
+        <label>
+            Zip Code:
+            <input type="text" formControlName="zip">
+        </label>
+    </div>
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+    <p>
+        <button (click)="updateProfile()">Update Profile</button>
+    </p>
+</form> -->
