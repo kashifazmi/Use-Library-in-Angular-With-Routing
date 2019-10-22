@@ -1,0 +1,132 @@
+/* common */
+@font-face {
+    font-family: roboto;
+    /* src: url(../../../../assets/fonts/Roboto-Medium.ttf); */
+}
+body{
+	font-family: roboto;
+}
+#wrapper .no-padding{
+	padding: 0;
+}
+#wrapper .no-float{
+	float: none;
+	margin: 65px auto;
+}
+#wrapper .page-content-wrapper{
+	width: auto; 
+    margin: 0; 
+    height: inherit;
+}
+#wrapper{
+	/* background: #ededef url(../../../../assets/images/contractor/contractor-bg.png) top left no-repeat; */
+	background-size: 100% 100%;
+	position: absolute;
+    left: 0;
+    right: 0;
+}
+#wrapper .login-wrapper{
+	height: 560px;
+	/* background: transparent url(../../../../assets/images/contractor/login-bg.png) top left no-repeat; */
+	background-size: 100% 100%;
+}
+#wrapper .login-wrapper .login-details{
+	height: inherit;
+    text-align: center;
+    padding: 100px;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .login-btn{
+	margin-top: 30px;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .login-btn button{
+	width: 100%;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    font-size: 12px;
+    height: 40px;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .login-btn button.primary-btn{
+	background: #00ae9e;
+    border-color: #00ae9e;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .login-btn button.secondary-btn{
+	background: #d6a328;
+    border-color: #d6a328;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .login-btn button:focus{
+	outline: none;	
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .login-btn button:active{
+	box-shadow: none;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .actions-wrapper .remember-me{
+	/* color: #fff; */
+    font-size: 12px;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .actions-wrapper .remember-me input{
+	margin-top: 2px;	
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .actions-wrapper .remember-me input:checked{
+	color: blue;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .actions-wrapper .forgot-password{
+	margin: 13px 0;
+    display: inline-block;
+    /* color: #fff; */
+    font-size: 12px;
+}
+/* common */
+
+/* contractor login */
+#wrapper .login-wrapper .login-details .credentials-wrapper{
+	margin-top: 80px;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .form-group{
+	position: relative;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .form-group .input-img{
+	position: absolute;
+    left: 11px;
+    top: 11px;
+    width: 18px;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper input[name='credentials']{
+	/* background: transparent url('../../../../assets/images/contractor/input-bg.png') top left no-repeat; */
+	background-size: 100% 100%;
+	border: none;
+	/* color: #fff; */
+	padding: 6px 10px 6px 40px;
+	letter-spacing: 1px;
+	height: 40px;
+	font-size: 13px;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper input[name='credentials']::placeholder{
+	/* color: #fff; */
+	font-weight: normal;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper input[name='credentials']:focus{
+	box-shadow: none;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .login-btn button img{
+	width: 13px;
+    margin-left: 5px;
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .login-btn .or-separator{
+	margin: 15px 0px;
+    /* color: #fff; */
+}
+#wrapper .login-wrapper .login-details .credentials-wrapper .login-btn .or-separator .or{
+	border-top: 1px solid #987a85;
+    display: inline-block;
+    width: 43%;
+    vertical-align: middle;
+}
+
+.color-red{
+	color: red;
+}
+/* contractor login */

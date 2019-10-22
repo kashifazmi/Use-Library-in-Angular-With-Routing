@@ -12,10 +12,11 @@ import { ThirdPartyLibraryComponent } from './components/third-party-library/thi
 import { AngularTutorialService } from './services/angular-tutorial.service';
 
 import { FormPageComponent } from './form-page/form-page.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FormControlGroupComponent } from './form-control-group/form-control-group.component';
 import {CheckboxModule} from 'primeng/checkbox';
 import { PrimengControlsComponent } from './primeng-controls/primeng-controls.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 @NgModule({
   declarations: [
     PrimengDetailsComponent,
@@ -25,7 +26,8 @@ import { PrimengControlsComponent } from './primeng-controls/primeng-controls.co
     ThirdPartyLibraryComponent,
     FormPageComponent,
     FormControlGroupComponent,
-    PrimengControlsComponent
+    PrimengControlsComponent,
+    LoginPageComponent
   ],
   imports: [
     CommonModule,
@@ -37,7 +39,8 @@ import { PrimengControlsComponent } from './primeng-controls/primeng-controls.co
     NbStepperModule,
     NbButtonModule,
     ReactiveFormsModule,
-    CheckboxModule
+    CheckboxModule,
+    FormsModule
   ],
   // providers: [AngularTutorialService]
 })
